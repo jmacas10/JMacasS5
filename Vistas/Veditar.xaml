@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JMacasS5.Vistas.Veditar"
+             Title="Veditar">
+    <VerticalStackLayout
+        Spacing="25">
+        <Label 
+            Text="EDITAR PERSONA"
+            Margin="8"
+            FontSize="25"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+
+         
+            <Label x:Name="lblstatus"
+            Grid.Row="1"
+            Grid.Column="0"
+           TextColor="Blue"
+                   
+        />
+            <Label
+              Text="Usuario:"
+                  Grid.Row="2"
+                Grid.Column="0"
+             TextColor="Blue"/>
+
+                <Entry x:Name="txtNombre"
+                      Grid.Row="2"
+                    Grid.Column="1"
+                       Placeholder="NEW USER"
+                   />
+
+ 
+            <Button
+        x:Name="btnEditar"
+        Text="Grabar"
+        Clicked="btnEditar_Clicked"
+                Margin="8"
+         Grid.Row="3"
+          Grid.Column="1" 
+        BackgroundColor="Green" TextColor="White"
+                
+        />
+            </Grid>
+
+
+    </VerticalStackLayout>
+</ContentPage>
